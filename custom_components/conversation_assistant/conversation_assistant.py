@@ -31,7 +31,6 @@ class ConversationAssistant():
     def __init__(self, hass, recognize, entry):
 
         self.id = entry.entry_id
-        self.speech_key = entry.options.get('speech_key', '')
 
         self.hass = hass
         self.update(manifest.version, '')
