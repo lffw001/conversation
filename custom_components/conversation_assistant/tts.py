@@ -22,7 +22,6 @@ async def async_setup_entry(
 class ConversationTtsEntity(tts.TextToSpeechEntity):
 
     def __init__(self, config_entry):
-        self.speech_key = config_entry.options.get('speech_key')
         self._attr_name = '语音助手TTS'
         self._attr_unique_id = f"{config_entry.entry_id}-tts"
 

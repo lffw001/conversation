@@ -14,7 +14,7 @@ from .http import HttpView
 from .manifest import manifest
 
 _LOGGER = logging.getLogger(__name__)
-PLATFORMS = [Platform.STT,  Platform.TTS, Platform.CONVERSATION]
+PLATFORMS = [Platform.TTS, Platform.CONVERSATION]
 
 async def async_setup_entry(hass: HomeAssistant, entry: ConfigEntry) -> bool:
     ''' 安装集成 '''
